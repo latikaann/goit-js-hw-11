@@ -1,8 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-
+body {
+  background-color: gainsboro;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -26,6 +30,11 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .search-form {
@@ -70,4 +79,42 @@ input {
 .load-more:hover,
 .load-more:focus {
   background-color: rgb(91, 93, 212);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.photo-card {
+  flex-basis: calc((100% - 30px) / 4);
+  box-shadow: 7px 7px 6px 0px rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.photo-card:hover,
+.photo-card:focus {
+  background-color: rgb(91, 93, 212);
+  transform: scale(1.01);
+}
+.photo-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.info {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
