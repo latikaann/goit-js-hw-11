@@ -54,7 +54,7 @@ function renderCards(cards) {
         downloads,
       }) => {
         return `<div class="photo-card">
-      <a href="${largeImageURL}">
+      <a class="photo-link" href="${largeImageURL}">
               <img
               class="gallery__image img"
               src="${webformatURL}"
@@ -84,4 +84,5 @@ function renderCards(cards) {
     )
     .join('');
   galleryBox.insertAdjacentHTML('beforeend', markup);
+  gallery.refresh();
 }

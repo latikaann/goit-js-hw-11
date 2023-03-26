@@ -5,8 +5,8 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -63,7 +63,10 @@ input {
 }
 
 .load-more {
-  display: none;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   min-width: 200px;
   padding: 20px 30px;
   cursor: pointer;
@@ -73,29 +76,34 @@ input {
   text-transform: uppercase;
   color: white;
   background-color: rgb(72, 74, 209);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .load-more:hover,
 .load-more:focus {
   background-color: rgb(91, 93, 212);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transform: scale(1.01);
 }
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
 .photo-card {
-  flex-basis: calc((100% - 30px) / 4);
+  flex-basis: calc((100% - 50px) / 4);
+}
+
+.photo-link {
+  display: block;
   box-shadow: 7px 7px 6px 0px rgba(0, 0, 0, 0.34);
   cursor: pointer;
   border-radius: 5px;
   background-color: white;
 }
 
-.photo-card:hover,
-.photo-card:focus {
+.photo-link:hover,
+.photo-link:focus {
   background-color: rgb(91, 93, 212);
   transform: scale(1.01);
 }
