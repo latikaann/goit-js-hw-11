@@ -38,6 +38,10 @@ a {
 }
 
 .search-form {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
@@ -63,7 +67,7 @@ input {
 }
 
 .load-more {
-  display: block;
+  display: none;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -85,6 +89,7 @@ input {
   transform: scale(1.01);
 }
 .gallery {
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
