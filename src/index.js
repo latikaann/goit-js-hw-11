@@ -125,7 +125,7 @@ async function onLoadMore(e) {
       cards.data.totalHits / cardsApiPixabay.perPage
     );
     // console.log(totalPages);
-    if (totalPages < cardsApiPixabay.page) {
+    if (totalPages <= cardsApiPixabay.page) {
       hideLoadMoreBtn();
       Notiflix.Notify.failure(
         "We're sorry, but you've reached the end of search results."
